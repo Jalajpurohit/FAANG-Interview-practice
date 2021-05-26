@@ -8,20 +8,28 @@ Start with first element e in the array and try to find such a pair (a, b) in th
 Otherwise, we repeat the above steps for all elements e at index i = 1 to n - 3 until we find a pair that meets the condition.'''
 
 def find_sum_of_two(A, val, start_index):
-    for i in range(start_index, len(A)):
-        for j in range(i+1, len(A)):
-            if A[i] + A[j] == val:
-                return True
-    return False
+  i = start_index
+  j = len(A) - 1
+  while i < j:
+    s = A[i] + A[j]
+    if s == val:
+      return True
+
+    if s < val:
+      i += 1
+    else:
+      j -= 1
+
+  return False
 
 def find_sum_of_three_v3(arr, required_sum):
-    
-    arr.sort()
-    for i in range(len(arr)-2):
-        remaining_sum = required_sum - arr[i]
-        if find_sum_of_two(arr, remaining_sum, i+1):
-            return True
-    return False
+  arr.sort()
+  for i in range(0, len(arr)-2):
+    remaining_sum = required_sum - arr[i]
+    if find_sum_of_two(arr, remaining_sum, i+1):
+      return True
+
+  return False
 
 arr = [-25, -10, -7, -3, 2, 4, 8, 10]
 
