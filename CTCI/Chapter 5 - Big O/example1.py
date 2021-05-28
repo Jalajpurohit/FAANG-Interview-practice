@@ -12,4 +12,5 @@ def foo(arr):
         
     print(sum_val, product)
 
-foo([1,2,3,4,5]) # 15,120
+foo([1,2,3,4,5])
+# Result: 15,120
