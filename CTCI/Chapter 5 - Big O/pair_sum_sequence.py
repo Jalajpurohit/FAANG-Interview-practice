@@ -7,5 +7,5 @@ def pair_sum_sequence(n):
         sum += pair_sum(i, i+1)
     return sum
 
-def pair_sum:
+def pair_sum(a,b):
     return a + b
