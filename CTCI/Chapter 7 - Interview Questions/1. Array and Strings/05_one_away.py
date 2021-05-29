@@ -3,11 +3,18 @@ Problem Statement:
 One Away - There are three types of edits that can be performed on strings: insert a character, remove a character, or replace a character.
 Given two strings, write a function to check if they are one edit (or zero edits) away.
 
-Hint 1:
-Hint 2:
-Hint 3:
+Examples:
+pale,  ple  -> True
+pales, pale -> True
+pale,  bale -> True
+pale,  bake -> False
+
+Hint 1: Start with the easy thing. Can you check eac of the conditions separately?
+Hint 2: What is the relationship between the "insert character" option and the "remove character" option? Do these need to be two separate checks?
+Hint 3: Can you do all three checks in a single pass?
 '''
-# O(N)
+
+# Time Complexity: O(N)
 import time
 import unittest
 
