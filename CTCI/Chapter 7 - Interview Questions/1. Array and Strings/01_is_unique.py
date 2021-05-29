@@ -1,7 +1,11 @@
-# Problem Statment: Is Unique - Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
-# Hint 1: Try a Hash Table
-# Hint 2: Could a bit vector be useful?
-# Hint 3: Can you solve it in O(N logN) time? What might a solution like that look like?
+'''
+Problem Statment:
+Is Unique - Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
+
+Hint 1: Try a Hash Table
+Hint 2: Could a bit vector be useful?
+Hint 3: Can you solve it in O(N logN) time? What might a solution like that look like?
+'''
 
 import time
 import unittest
