@@ -40,7 +40,7 @@ def urlify_pythonic(text, length):
     """solution using standard library"""
     return text.rstrip().replace(" ", "%20")
 
-# Solution 2: URLify with python replace() function
+# Solution 3: URLify with python join() function
 # Time Complexity: O(N)
 def urlify_pythonic_v2(string, length):
     return '%20'.join(string.split())
