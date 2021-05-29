@@ -1,8 +1,12 @@
-# Problem Statement: Check Permutations - Given two strings, write a method to decide if one is a permutation of the other.
-# Hint 1: Describe what it means for two strings to be permutations of each other. Now, look at that definition you provided. Can you check the strings against that definition?
-# Hint 2: There is one solution that is O(N log N) time. Another solution uses some space, but is O(N) time.
-# Hint 3: Could a hash table be useful?
-# Hint 4: Two strings that are permutations should have the same characters, but in different orders. Can you make orders the same?
+'''
+Problem Statement:
+Check Permutations - Given two strings, write a method to decide if one is a permutation of the other.
+
+Hint 1: Describe what it means for two strings to be permutations of each other. Now, look at that definition you provided. Can you check the strings against that definition?
+Hint 2: There is one solution that is O(N log N) time. Another solution uses some space, but is O(N) time.
+Hint 3: Could a hash table be useful?
+Hint 4: Two strings that are permutations should have the same characters, but in different orders. Can you make orders the same?
+'''
 
 import unittest
 from collections import Counter
