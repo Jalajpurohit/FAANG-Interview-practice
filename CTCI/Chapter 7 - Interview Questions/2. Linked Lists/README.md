@@ -4,7 +4,8 @@ time access to a particular "index" within the list. This means that if you'd li
 through K elements.
 The benefit of a linked list is that you can add and remove items from the beginning of the list in constant time.
 
-#### Creating a Linked List
+#### Creating a Linked List:
+```python
 class LinkedList:
     def __init__(self):
         self.head_node = None
@@ -36,9 +37,10 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next_element = None
+```
 
-
-#### Deleting a Node from a singly Linked List
+#### Deleting a Node from a singly Linked List:
+```python
 def delete(lst, value):
     deleted = False
     if lst.is_empty():  # Check if list is empty -> Return False
@@ -69,3 +71,4 @@ def delete(lst, value):
         print(str(value) + " deleted!")
 
     return deleted
+```
