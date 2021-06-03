@@ -17,9 +17,11 @@ Hint 1: Of course, you could convert the linked lists to integers, compute the s
         linked list. If you did this in an interview, your interviewer would likely accept the answer, and then see if
         you could do this without converting it to a number and back.
 Hint 2: Try recursion. Suppose you have two lists, A = 1 -> 5 -> 9 (representing 951) and B = 2 -> 3 -> 6 -> 7 (representing 2367), and a function
-71 Hint 3:
-95 Hint 4:
-109 Hint 5:
+Hint 3: Make sure you considered linked lists that are not the same length.
+Hint 4: Does you algorithm work on linked lists like 9 -> 7 -> 8 and 6 -> 8 -> 5? Double check that.
+Hint 5: For the follow up question: The issue is that when the linked lists aren't the same length, the head of one
+        linked list might represent the 1000's place while the other represents the 10's place. What if you made them
+        the same length? Is there a way to modify the linked list to do that, without changing the value it represents?
 '''
 
 from 02_Linked_List.linked_list import LinkedList
